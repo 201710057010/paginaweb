@@ -1,0 +1,138 @@
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table-dark {
+    color: #fff;
+    background-color: #212529;
+}
+
+
+.table-borderless tbody+tbody, .table-borderless td, .table-borderless th, .table-borderless thead th {
+    border: 0;
+}
+
+.table-dark td, .table-dark th, .table-dark thead th {
+    border-color: #32383e;
+}
+
+.container{
+    background-color: #536dfe;
+    text-align: right;
+    width: auto;
+    height: 50px;
+    color: #FFF;
+    font-family: 'Oswald', sans-serif;
+}
+
+#Salir{
+    position: relative;
+    right: 15px;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#Registrar{
+    position: relative;
+    float: left;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.Reservar{
+    margin-top: 20px; 
+    font-size: 20px;
+    position: relative;
+    left: -100px;
+    width: 200px;
+    color: #FFF;
+    background-color: #9c27b0;
+    cursor: pointer;
+}
+
+.reservasContainer{
+    width: auto;
+    height: 550px;
+    margin-top: 20px;
+}
+
+  .flexsearch--input {
+    position: relative;
+    float: left;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 30px;
+    padding: 0 46px 0 10px;
+    border-color: #888;
+    border-radius: 17px; /* (height/2) + border-width */
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 15px;
+    color: #333;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 19px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  .flexsearch--submit {
+    position: relative;
+    left : -50px;
+    top: 4px;
+    display: block;
+    width: 30px;
+    height: 60px;
+    padding: 0;
+    border: none;
+    margin-top: 20px; /* margin-top + border-width */
+    margin-right: 5px; /* border-width */
+    background: transparent;
+    color: #888;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 30px;
+    line-height: 60px;
+  }
+
+  .flexsearch--input:focus {
+    outline: none;
+    border-color: #333;
+  }
+  
+  .flexsearch--input:focus.flexsearch--submit {
+       color: #333; 
+  }
+  
+  .flexsearch--submit:hover {
+    color: #333;
+    cursor: pointer;
+  }
+  
+  ::-webkit-input-placeholder {
+      color: #888;  
+  }
+  
+  input:-moz-placeholder {
+    color: #888
+  }
+  

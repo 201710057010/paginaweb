@@ -1,0 +1,41 @@
+<div>
+  <div class="container">
+      <button id ="Registrar" [routerLink] = "['/registrar']">
+        Registrar 
+      </button>
+      <button id = "Salir" [routerLink] ="['/']">
+          Salir
+      </button>
+  </div>
+  <a [routerLink]= "['hacer']">
+    <button class="Reservar">
+      Hacer reserva
+    </button>
+  </a>
+  <div class = "reservasContainer">
+      <input #input type="input" placeholder="buscar" class="flexsearch--input" required autofocus>
+      <button class ="flexsearch--submit" (click)="buscar(input.value)">
+          &#10140;
+      </button>
+    <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Aula</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Codigo</th>
+      <th scope="col">Horario</th>
+      <th scope="col">Cancelar</th>
+    </tr>
+    <tr *ngFor="let reserva of buscadas">
+      <th scope="col">{{reserva.aula}}</th>
+      <th scope="col">{{reserva.nombre}}</th>
+      <th scope="col">{{reserva.codigo}}</th>
+      <th scope="col">{{reserva.horario}}</th>
+      <th scope="col"><button (click)= "eliminarReserva(reserva.aula,reserva.nombre,reserva.horario)"> cancelar </button></th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+  </div>
+</div>
