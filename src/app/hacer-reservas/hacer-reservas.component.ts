@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { allResolved } from 'q';
 
 @Component({
   selector: 'app-hacer-reservas',
